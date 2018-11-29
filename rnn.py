@@ -31,7 +31,7 @@ ex_un_data = data.reshape(1,-1)
 data=(data-mean)/std
 
 ex_data = data.reshape(1,-1)
-dpdncy = int(sys.argv[2])
+dpdncy = int(sys.argv[5])
 cr_data = np.zeros((data.shape[0]-dpdncy,(dpdncy+1)*data.shape[1]))
 for i in range(cr_data.shape[0]):
     cr_data[i] = ex_data[0,slice(i*data.shape[1],i*data.shape[1]+(dpdncy+1)*data.shape[1])]
@@ -40,13 +40,13 @@ cr_labels = labels[dpdncy:]
 tf.set_random_seed(42)
 np.random.seed(42)
 
-learning_rate = 0.01
-num_epochs = 100
-batch_size = 25
+learning_rate = float(sys.argv[2])
+num_epochs = int(sys.argv[3])
+batch_size = int(sys.argv[4])
 
 num_input = data.shape[1] 
 timesteps = dpdncy + 1
-num_hidden = int(sys.argv[3])
+num_hidden = int(sys.argv[6])
 num_classes = int(np.max(labels) - np.min(labels) + 1)
 
 cr_labels=np.zeros((data.__len__(),num_classes)); cr_labels[np.arange(data.__len__()),np.array(labels.tolist(),dtype=int)]=1;
