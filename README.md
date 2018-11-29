@@ -1,7 +1,7 @@
 MotionClassifier-Rpi
 ============
 
-This folder contains code for training an rnn model based on 3 Sensor readings(Accelerometer, Magnetometer & Gyroscope) being input at a certain frequency and classifies motion state into 3 classes(1. Stopped, 2. Moving Straight, 3. Turning). An already collected dataset has been deployed in "mod_data.csv". It further contains a predictor code trained to do a inference on RPi3 wherein it ups respective pin(GPIO 17, GPIO 27 and GPIO 22) corresponding to the prediction for the designated duration.
+This folder contains code for training an rnn model based on 3 Sensor readings(Accelerometer, Magnetometer & Gyroscope) being input at a certain frequency and classifies motion state into 3 classes(1. Stopped, 2. Moving Straight, 3. Turning). An already collected dataset has been deployed in "mod_data.csv". It further contains a predictor code designed to do a inference on RPi3 wherein it ups respective pin(GPIO 17, GPIO 27 and GPIO 22) corresponding to the prediction for the designated duration.
 
 ## Training
 
