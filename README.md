@@ -18,3 +18,4 @@ python inference.py [#Frequency in number of time steps per second]
 e.g. python inference.py 4
 
 This code uses the weights created in Parameters folder to inference on Rpi3.
+# MotionClassifier-Rpi
