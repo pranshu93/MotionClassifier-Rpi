@@ -5,9 +5,9 @@ This folder contains code for training an rnn model based on 3 Sensor readings(A
 
 ## Training
 
-python rnn.py [data_file] [#Time Steps Dependency] [#Hidden Layer Size]
+python rnn.py [Data_file] [Learning_rate] [#Epochs] [#Batch_size] [#Time Steps Dependency] [#Hidden Layer Size]
 
-e.g. python rnn.py mod_data.csv 3 9
+e.g. python rnn.py mod_data.csv 0.01 100 25 3 9
 
 This will create a folder Parameters with appropriate trained weights and mean, std of distribution alongside #Time Step Dependency and #Hidden Layer Size in form of numpy arrays.
 
